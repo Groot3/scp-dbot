@@ -86,5 +86,4 @@ try {
 }
 //Makes sure bot doesnt die on one error
 //client.login(`${keys.BOT_TOKEN}`)
-const botToken = process.env.BOT_TOKEN
-client.login(botToken)
+client.login(process.env.BOT_TOKEN)
