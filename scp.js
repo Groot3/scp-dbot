@@ -9,11 +9,11 @@ const SCPscrape = require('./scrape.js')
 const cmds = ["!scp"]
 
 client.once('ready', () => {
-    client.user.setStatus('online', 'Listening for !scp')
     console.log("Ready.")
 })
 
 try {
+    client.user.setStatus('online', 'Listening for !scp')
     client.on('message', msg => {
 
         // numeric function from StackOverflow to verify input
