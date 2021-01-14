@@ -7,13 +7,13 @@ const client = new discord.Client()
 const SCPscrape = require('./scrape.js')
 
 const cmds = ["!scp"]
+client.user.setStatus('online', 'Listening for !scp')
 
 client.once('ready', () => {
     console.log("Ready.")
 })
 
 try {
-    client.user.setStatus('online', 'Listening for !scp')
     client.on('message', msg => {
 
         // numeric function from StackOverflow to verify input
