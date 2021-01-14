@@ -9,6 +9,7 @@ const SCPscrape = require('./scrape.js')
 const cmds = ["!scp"]
 
 client.once('ready', () => {
+    client.user.setStatus('online', 'Listening for !scp')
     console.log("Ready.")
 })
 
