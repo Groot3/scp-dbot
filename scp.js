@@ -14,7 +14,7 @@ client.once('ready', () => {
 
 try {
     client.on('message', msg => {
-
+        console.log("Bot is running with "+ client.users.size + " users & " + client.guilds.size + " servers.")
         // numeric function from StackOverflow to verify input
         function isNumeric(n) {
             return !isNaN(parseFloat(n)) && isFinite(n);
